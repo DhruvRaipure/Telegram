@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "npm install --production"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-telegram-bot-api": "^0.40.0"
+    "node-telegram-bot-api": "^0.40.0",
+    "pg": "^7.16.1",
+    "time-stamp": "^2.2.0"
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm": "3.5.2"
   }
 }
